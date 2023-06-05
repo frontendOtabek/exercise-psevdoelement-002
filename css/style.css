@@ -11,12 +11,12 @@ html {
 }
 
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -29,4 +29,94 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  display: flex;
+}
+
+/* GLOBAL-WRAPPER */
+.global-wrapper {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-content {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.left-content-wrapper {
+  width: 100%;
+  max-width: 285px;
+}
+
+.left-content-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'Bebas Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.left-content-button {
+  display: inline-block;
+  background-color: #1e90ff;
+  border: 0;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+.left-content-button-inner {
+  display: flex;
+  align-items: center;
+}
+
+.left-button-info {
+  font-family: 'Bebas Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.left-content-button-inner::before {
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-right: 12px;
+  background-image: url('../img/star.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: '';
+}
+
+
+/* RETINA BG IMG  */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .left-content {
+    background-image: url('../img/bg-img@2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
 }
