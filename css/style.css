@@ -21,10 +21,6 @@ body {
   padding: 0;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
 
 /* MAIN-CONTENT */
 .main-content {
@@ -140,22 +136,97 @@ img {
 
 .right-content-item {
   display: flex;
+  align-items: center;
 }
+
 .right-content-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.right-content-img {}
+.right-content-img {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+}
 
-.right-content-inner {}
+.right-content-inner {
+  margin-left: 16px;
+}
 
-.right-content-inner-heading {}
+.right-content-inner-heading {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-family: 'Bebas Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #222;
+}
 
-.right-content-info {}
+.right-content-info {
+  display: flex;
+}
 
-.right-content-time {}
+.right-content-time {
+  display: flex;
+  margin-right: 24px;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #888;
+}
 
-.right-content-watch {}
+.right-content-time-wrapper {
+  display: flex;
+}
+
+.right-content-time::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url('../img/clock.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: '';
+}
+
+.right-content-watch {
+  display: flex;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666;
+}
+
+.right-content-watch::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-image: url('../img/eyes.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: '';
+}
+
+.right-content-button {
+  display: block;
+  padding: 12px;
+  background-color: #1e90ff;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /* RETINA BG IMG  */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
