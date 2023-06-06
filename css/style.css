@@ -75,6 +75,14 @@ body {
   text-decoration: none;
 }
 
+.left-content-button:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+
+.left-content-button:active {
+  background-color: rgba(30, 144, 255, 0.6);
+}
+
 .left-content-button-inner {
   display: flex;
   align-items: center;
