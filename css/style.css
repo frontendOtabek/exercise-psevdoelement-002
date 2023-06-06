@@ -161,7 +161,16 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 2px;
+  text-decoration: none;
   color: #222;
+}
+
+.right-content-inner-heading:hover {
+  color: #1e90ff;
+}
+
+.right-content-inner-heading:active {
+  color: rgba(30, 144, 255, 0.6);
 }
 
 .right-content-info {
@@ -225,6 +234,13 @@ body {
   line-height: 16px;
   color: #fff;
   text-decoration: none;
+}
+
+.right-content-button:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.right-content-button:active {
+  background-color: rgba(30, 144, 255, 0.6);
 }
 
 
